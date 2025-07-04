@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chilebet Apuestas</title>
+  <style>
+    body {
+      background-color: #09192d;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    footer {
+      text-align: left;
+      display: none; /* oculto al inicio */
+    }
+    .boton {
+      background-color: #CB2127;
+      padding: 10px 20px;
+      color: white;
+      display: inline-block;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <img src="chilebet.png" alt="chilebet logo">
+  <h1 id="titulo">Haz click para apostar</h1>
+  <div class="boton" onclick="
+    document.getElementById('titulo').textContent = 'Haz apostado, premio al pie de página';
+    document.querySelector('footer').style.display = 'block';
+  ">Apostar</div>
+</body>
+<footer>
+  <p>Ganaste 1,962,000,000 CLP</p>
+  <img src="paypal.png" alt="saldo paypal">
+</footer>
+</html>
